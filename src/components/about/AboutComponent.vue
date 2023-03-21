@@ -57,7 +57,7 @@
                 <img
                   class="position-absolute w-100 h-100 rounded wow zoomIn"
                   data-wow-delay="0.9s"
-                  src="src/assets/img/about.jpg"
+                  src="../../assets/img/about.jpg"
                   style="object-fit: cover"
                 />
               </div>

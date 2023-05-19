@@ -6,27 +6,24 @@
               <div class="section-title position-relative pb-3 mb-5">
                 <h5 class="fw-bold text-primary text-uppercase">Acerca de nosotros</h5>
                 <h1 class="mb-0">
-                  Titulo de prueba
+                  VARIADORES Y MATERIAL INDUSTRIAL VAMI
                 </h1>
               </div>
               <p class="mb-4">
-                Aca se encontrara el texto para describir un poco sobre la empresa
+                <!-- Aca se encontrara el texto para describir un poco sobre la empresa -->
               </p>
               <div class="row g-0 mb-3">
                 <div class="col-sm-6 wow zoomIn" data-wow-delay="0.2s">
                   <h5 class="mb-3">
-                    <i class="fa fa-check text-primary me-3"></i>Propiedad 1
+                    <i class="fa fa-check text-primary me-3"></i>MISION
                   </h5>
                   <h5 class="mb-3">
-                    <i class="fa fa-check text-primary me-3"></i>Propiedad 2
+                    <i class="fa fa-check text-primary me-3"></i>VISION
                   </h5>
                 </div>
                 <div class="col-sm-6 wow zoomIn" data-wow-delay="0.4s">
                   <h5 class="mb-3">
-                    <i class="fa fa-check text-primary me-3"></i>Propiedad 3
-                  </h5>
-                  <h5 class="mb-3">
-                    <i class="fa fa-check text-primary me-3"></i>Propiedad 4
+                    <i class="fa fa-check text-primary me-3"></i>VALORES
                   </h5>
                 </div>
               </div>
@@ -57,7 +54,7 @@
                 <img
                   class="position-absolute w-100 h-100 rounded wow zoomIn"
                   data-wow-delay="0.9s"
-                  src="../../assets/img/about.jpg"
+                  src="src/assets/img/about.jpg"
                   style="object-fit: cover"
                 />
               </div>

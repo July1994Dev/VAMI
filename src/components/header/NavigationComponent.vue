@@ -6,7 +6,8 @@
       <div class="container-fluid position-relative p-0">
         <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
           <a href="/" class="navbar-brand p-0">
-            <h1 class="m-0"><i class="fa fa-user-tie me-2"></i>Nombre</h1>
+            <!-- <h1 class="m-0"><i class="fa fa-user-tie me-2"></i>Nombre</h1> -->
+            <img class="vami-logo" src="../../assets/img/logo.png">
           </a>
           <button
             class="navbar-toggler"
@@ -18,10 +19,12 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto py-0">
-              <a href="" class="nav-item nav-link active">Seccion 1</a>
-              <a href="" class="nav-item nav-link">Seccion 2</a>
-              <a href="" class="nav-item nav-link">Seccion 3</a>
-              <div class="nav-item dropdown">
+              <a href="" class="nav-item nav-link active">TOSHIBA</a>
+              <a href="" class="nav-item nav-link">EATON</a>
+              <a href="" class="nav-item nav-link">SICK</a>
+              <a href="" class="nav-item nav-link">CONTRINEX</a>
+              <a href="" class="nav-item nav-link">PEPPERL</a>
+              <!-- <div class="nav-item dropdown">
                 <a
                   href="#"
                   class="nav-link dropdown-toggle"
@@ -49,8 +52,8 @@
                   >
                   <a href="" class="dropdown-item">Seccion </a>
                 </div>
-              </div>
-              <a href="" class="nav-item nav-link">Contact</a>
+              </div> -->
+              <a href="" class="nav-item nav-link">CONTACTO</a>
             </div>
             <!-- <button
               type="button"
@@ -69,7 +72,7 @@
         >
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img class="w-100" src="../../assets/img/carousel-1.jpg" alt="Image" />
+              <img class="w-100" src="src/assets/img/carousel-1.jpg" alt="Image" />
               <div
                 class="carousel-caption d-flex flex-column align-items-center justify-content-center"
               >
@@ -95,8 +98,8 @@
                 </div>
               </div>
             </div>
-            <div class="carousel-item">
-              <img class="w-100" src="../../assets/img/carousel-2.jpg" alt="Image" />
+            <!-- <div class="carousel-item">
+              <img class="w-100" src="src/assets/img/carousel-2.jpg" alt="Image" />
               <div
                 class="carousel-caption d-flex flex-column align-items-center justify-content-center"
               >
@@ -121,9 +124,9 @@
                   >
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
-          <button
+          <!-- <button
             class="carousel-control-prev"
             type="button"
             data-bs-target="#header-carousel"
@@ -140,11 +143,13 @@
           >
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
-          </button>
+          </button> -->
         </div>
       </div>
 </template>
 
 <style scoped>
-
+.vami-logo{
+  width: 200px;
+}
 </style>

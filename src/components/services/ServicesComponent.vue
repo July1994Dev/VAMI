@@ -14,10 +14,10 @@
                         <div class="service-icon">
                             <i class="fa fa-shield-alt text-white"></i>
                         </div>
-                        <h4 class="mb-3">Servicio</h4>
-                        <p class="m-0">
-                            Descripcion detallada no muy extensa sobre el servicio
-                        </p>
+                        <h4 class="mb-3">SERVICIOS DE PROGRAMACION DE VARIADORES</h4>
+                        <!-- <p class="m-0">
+                            Descripcion detallada no muy extensa sobre el servicio 
+                        </p>-->
                         <a class="btn btn-lg btn-primary rounded" href="">
                             <i class="bi bi-arrow-right"></i>
                         </a>
@@ -29,10 +29,10 @@
                         <div class="service-icon">
                             <i class="fa fa-chart-pie text-white"></i>
                         </div>
-                        <h4 class="mb-3">Servicio</h4>
-                        <p class="m-0">
-                            Descripcion detallada no muy extensa sobre el servicio
-                        </p>
+                        <h4 class="mb-3">ENVIOS NACIONALES E INTERNACIONALES</h4>
+                        <!-- <p class="m-0">
+                            Descripcion detallada no muy extensa sobre el servicio 
+                        </p>-->
                         <a class="btn btn-lg btn-primary rounded" href="">
                             <i class="bi bi-arrow-right"></i>
                         </a>
@@ -45,9 +45,9 @@
                             <i class="fa fa-code text-white"></i>
                         </div>
                         <h4 class="mb-3">Servicio</h4>
-                        <p class="m-0">
-                            Descripcion detallada no muy extensa sobre el servicio
-                        </p>
+                        <!-- <p class="m-0">
+                            Descripcion detallada no muy extensa sobre el servicio 
+                        </p> -->
                         <a class="btn btn-lg btn-primary rounded" href="">
                             <i class="bi bi-arrow-right"></i>
                         </a>

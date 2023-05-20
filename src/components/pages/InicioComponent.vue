@@ -12,26 +12,30 @@ import TeamComponent from '../team/TeamComponent.vue';
 import BlogComponent from '../blog/BlogComponent.vue';
 import VendorComponent from '../vendor/VendorComponent.vue';
 import FooterComponent from '../footer/FooterComponent.vue';
+import useProductStore from '../../stores/ProductStore';
+import { storeToRefs } from 'pinia';
+import { ref } from 'vue';
+
+const { MarkItems } = storeToRefs(useProductStore());
+
 </script>
 
 <template>
     <div>
-        <ContactDataComponent />
+        <!-- <ContactDataComponent /> -->
         <NavigationComponent />
         <FactsComponent />
         <AboutComponent />
         <FeaturesComponent />
         <ServicesComponent />
         <!-- <PricesComponent /> -->
-        <QuotesComponent />
         <!-- <TestimonialsComponent /> -->
         <!-- <TeamComponent /> -->
-        <BlogComponent />
+        <BlogComponent v-for="mark in MarkItems" :Mark="mark.Name" :Items="mark.Products" :Folder="mark.Folder" :Id="mark.Id"/>
+        <QuotesComponent />
         <!-- <VendorComponent /> -->
         <FooterComponent />
     </div>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>

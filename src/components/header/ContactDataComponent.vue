@@ -8,7 +8,7 @@
         <div class="d-inline-flex align-items-center" style="height: 45px">
           <small class="me-3 text-light"><i class="fa fa-map-marker-alt me-2"></i>calle numero, estado, pais</small>
           <small class="me-3 text-light"><i class="fa fa-phone-alt me-2"></i>+222 222 222</small>
-          <small class="text-light"><i class="fa fa-envelope-open me-2"></i>correo@correo.com</small>
+          <small class="text-light"><i class="fa fa-envelope-open me-2"></i>vami@vami.com.mx</small>
         </div>
       </div>
       <div class="col-lg-4 text-center text-lg-end">

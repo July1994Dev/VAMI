@@ -1,13 +1,12 @@
-import { createRouter, createWebHashHistory } from "vue-router";
+import { createRouter, createWebHashHistory, createWebHistory } from "vue-router";
 import InicioComponent from '../components/pages/InicioComponent.vue';
 
 const routes = [
-  { path: '/', component: InicioComponent },
-  // { path: '/about', component: About },
+  { path: '/', component: InicioComponent }
 ];
 
 const router = createRouter({
-  history: createWebHashHistory(),
+  history: createWebHistory(),
   routes,
 });
 

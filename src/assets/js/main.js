@@ -1,5 +1,5 @@
 import WOW from 'wow.js';
-
+import jQuery from 'jquery';
 (function ($) {
     "use strict";
     // Spinner

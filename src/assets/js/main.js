@@ -1,6 +1,7 @@
+import WOW from 'wow.js';
+
 (function ($) {
     "use strict";
-
     // Spinner
     var spinner = function () {
         setTimeout(function () {

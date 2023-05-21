@@ -1,10 +1,63 @@
 <script setup>
+import { onMounted, ref } from 'vue';
+import {
+  Toshiba_VFAS34022PC,
+  Toshiba_VFAS34055PC,
+  Toshiba_VFAS34185PC,
+  Toshiba_VFAS34750PC,
+  Toshiba_VFS154037PL1W1,
+  Contrinex_LRS3030103,
+  Contrinex_OSQ18RVP6Q,
+  Contrinex_V61,
+  Contrinex_Z2R400CP4,
+  Eaton_031607, Eaton_072737, Eaton_081438, Eaton_207297, Eaton_266154,
+  Pepperl_209759,
+  Pepperl_3261610027,
+  Pepperl_3261610087,
+  Pepperl_70109009,
+  Sick_1040764, Sick_1057497, Sick_2029216, Sick_6044682
+} from './ImagesLoader.js';
+
 const props = defineProps({
   Items: Array,
   Mark: String,
   Folder: String,
   Id: String
 });
+
+const imageUrlMap = ref(null);
+
+const loadImages = () => {
+  imageUrlMap.value = {
+    Toshiba_VFAS34022PC,
+    Toshiba_VFAS34055PC,
+    Toshiba_VFAS34185PC,
+    Toshiba_VFAS34750PC,
+    Toshiba_VFS154037PL1W1,
+    Contrinex_LRS3030103,
+    Contrinex_OSQ18RVP6Q,
+    Contrinex_V61,
+    Contrinex_Z2R400CP4,
+    Eaton_031607, Eaton_072737, Eaton_081438, Eaton_207297, Eaton_266154,
+    Pepperl_209759,
+    Pepperl_3261610027,
+    Pepperl_3261610087,
+    Pepperl_70109009,
+    Sick_1040764, Sick_1057497, Sick_2029216, Sick_6044682
+  };
+}
+
+const getImageUrl = (markId, imageName) => {
+  if (!imageUrlMap.value) {
+    loadImages();
+  }
+
+  imageName = imageName.replaceAll('-', '');
+  let realName = `${markId}_${imageName.split('.')[0]}`;
+  let imagenURL = imageUrlMap.value[realName];
+  return imagenURL;
+};
+
 </script>
 <style scoped>
 .img-product {
@@ -24,8 +77,7 @@ const props = defineProps({
         <div class="col-lg-4 wow slideInUp" data-wow-delay="0.3s" v-for="item in Items">
           <div class="blog-item bg-light rounded overflow-hidden">
             <div class="blog-img position-relative overflow-hidden">
-              <img class="img-fluid img-product" :src="`../../src/assets/img/marks/products/${Folder}/${item.Image}`"
-                alt="" />
+              <img class="img-fluid img-product" :src="getImageUrl(Id, item.Image)" alt="" />
               <a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" :href="item.URL"
                 target="_blank">{{ Mark }}</a>
             </div>

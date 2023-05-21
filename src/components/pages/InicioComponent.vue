@@ -14,9 +14,9 @@ import VendorComponent from '../vendor/VendorComponent.vue';
 import FooterComponent from '../footer/FooterComponent.vue';
 import useProductStore from '../../stores/ProductStore';
 import { storeToRefs } from 'pinia';
-import { ref } from 'vue';
 
 const { MarkItems } = storeToRefs(useProductStore());
+
 
 </script>
 
@@ -31,7 +31,8 @@ const { MarkItems } = storeToRefs(useProductStore());
         <!-- <PricesComponent /> -->
         <!-- <TestimonialsComponent /> -->
         <!-- <TeamComponent /> -->
-        <BlogComponent v-for="mark in MarkItems" :Mark="mark.Name" :Items="mark.Products" :Folder="mark.Folder" :Id="mark.Id"/>
+        <BlogComponent v-for="mark in MarkItems" :Mark="mark.Name" :Items="mark.Products" :Folder="mark.Folder"
+            :Id="mark.Id" />
         <QuotesComponent />
         <!-- <VendorComponent /> -->
         <FooterComponent />
